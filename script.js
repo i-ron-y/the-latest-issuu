@@ -20,10 +20,12 @@ function scrapeIssuuPage() {
 	    			errorTag.text('ERROR: Sorry, it looks like this ISSUU page doesn\'t have any issues at all!');
 	    		} else {
 	    			var latestIssue = data.items[0];
+	    			var issueTitle = latestIssue.title;
 		    		var issueURL = latestIssue.link;
 		    		var coverImg = latestIssue.enclosure.link;
 
-		    		container.html('<div id="latest-issue"><a href="' + issueURL + '"><img src="' + coverImg + '"></a></div>');
+		    		container.html('<div id="latest-issue"><a href="' + issueURL + '"><img src="' +
+		    						coverImg + '"><br>' + issueTitle + '</a></div>');
 		    	}
 	  		},
 	  		error: function(data) {
