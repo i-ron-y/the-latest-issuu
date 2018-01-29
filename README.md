@@ -1,1 +1,1 @@
-http://i-ron-y.github.io/the-latest-issue
+http://i-ron-y.github.io/the-latest-issuu/
