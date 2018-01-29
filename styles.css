@@ -1,0 +1,40 @@
+header {
+  position: relative;
+  height: 80px;
+  background-image: linear-gradient(#f26f61, #f26f61);
+  border-bottom-left-radius: 10% 100%;
+  border-bottom-right-radius: 10% 100%;
+  border-top-right-radius: 10% 100%;
+}
+
+h2 {
+  margin: 0;
+  padding: 12.5px 0;
+  font: 40px "Verdana";
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+}
+
+body {
+  text-align: center;
+  font: 18px "Verdana";
+  color: #353535;
+}
+
+input {
+  margin: 1px;
+  text-align: center;
+}
+
+#input-area {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#error {
+  color: red;
+}
