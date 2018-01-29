@@ -1,5 +1,3 @@
-// TODO: style the page using CSS
-
 function scrapeIssuuPage() {
 	var wrapper = $('#wrapper'), container, errorTag;
 	container = $('<div id="issuu" class="container"></div>');
@@ -8,7 +6,6 @@ function scrapeIssuuPage() {
 	container.html(errorTag);
 
 	var username = document.getElementById("username").value;
-	console.log(username.length)
 
 	if (!isUsernameValid(username)) {
 	    errorTag.text('ERROR: A valid username has between 4 and 30 of only these characters: a-z 0-9 _ . -');
