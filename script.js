@@ -10,7 +10,7 @@ function scrapeIssuuPage() {
 	if (!isUsernameValid(username)) {
 	    errorTag.text('ERROR: A valid username has between 4 and 30 of only these characters: a-z 0-9 _ . -');
 	} else {
-		var url = 'http://search.issuu.com/' + username + '/docs/recent.rss'
+		var url = 'http://search.issuu.com/' + username + '/docs/recent.rss';
 		var request = $.ajax({
 			type: 'GET',
 			url: 'https://api.rss2json.com/v1/api.json?rss_url=' + url,
@@ -37,5 +37,5 @@ function scrapeIssuuPage() {
 
 function isUsernameValid(username) {
 	var usernamePattern = /^[a-z0-9\_\.\-]+$/;
-	return (username.match(usernamePattern) && username.length >= 4 && username.length <= 30)
+	return (username.match(usernamePattern) && username.length >= 4 && username.length <= 30);
 }
